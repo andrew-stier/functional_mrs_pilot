@@ -129,7 +129,7 @@
 \newcommand{\step}[3]{%
   \color{emphasis}{Step }
   {\large\color{emphasis}#1}
-  \hspace{18em}
+  \hfill
   \color{emphasis}{\footnotesize  [Time required #3 minutes]\par}
   \smallskip
   \textbf{\color{accent}{#2} }\par

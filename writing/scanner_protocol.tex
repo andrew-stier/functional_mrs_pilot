@@ -9,6 +9,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
+\usepackage{ragged2e}
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -32,16 +33,16 @@
 \addbibresource{sample.bib}
 
 \begin{document}
-\name{A Standerd Protocol}
-\tagline{This is the simple version of a complex protocol}
-\made{October 2 2017}
-% \logo{6.5cm}{"Logo"}
+\name{Functional MRS Pilot Protocol}
+%\tagline{This is the simple version of a complex protocol}
+\made{May 29, 2019}
+\logo{6.5cm}{"logo"}
 
 
 \docinfo{%
   % can add more \addedtopeople
-  \madeby{Name}{abv1@uni.ac.uk}{October 2, 2017}
-  \addedto{John Smith}{abv1@uni.ac.uk}{October 3, 2017}
+  \madeby{Andrew Stier}{andrewstier@uchicago.edu}{May 29, 2019}
+  %\addedto{John Smith}{abv1@uni.ac.uk}{October 3, 2017}
 }
 
 
@@ -52,74 +53,75 @@
 
 %% Make the header extend all the way to the right, if you want.
 \begin{fullwidth}
-% \makeheader
+\makeheader
 \end{fullwidth}
 
 %% Provide the file name containing the sidebar contents as an optional parameter to \need.
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \need title in the "main" bar.
-\need[scanner_materials]{Protocol}
+\need[scanner_protocol_info]{Protocol \hfill 85 minutes}
 
-\step{1}{Lorem ipsum dolor sit amet, consectetur}{20}
+\step{1}{Initial Setup}{21}
 \begin{itemize}
-	\item Take one of x and then
-	\item Then do the next thing
-	\item Then do the next thing
-	\item Then do the next thing
+	\item Participant Loading \hfill 10 minutes
+	\item Localizer \hfill 1 minute
+	\item Structural Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
-\step{2}{Pellentesque habitant morbi tristique senectus}{35}
+\step{2}{MRS Scan 1: Left Cerebellum}{12.5}
 \begin{itemize}
-	\item Then do the next thing
-	\item Then do the next thing
-	\item Then do the next thing
+	\item Locate MRS Voxel \hfill 30 seconds
+	\item Shimming \hfill 2 minutes
+	\item MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
-\step{3}{habitant morbi tristique senectus}{40}
+
+\step{3}{MRS Scan 2: Left Occipital Pole (Visual Cortex)}{12.5}
 \begin{itemize}
-	\item Then do the next thing
-	\item Then do the next thing
+	\item Locate MRS Voxel \hfill 30 seconds
+	\item Shimming \hfill 2 minutes
+	\item MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
-\step{4}{Ut quis orci luctus, efficitur sem vitae}{25}
+\step{4}{MRS Scan 3: Right Paracingulate Gyrus (Right Anterior Cingulate Cortex/ vmPFC/ACC)}{12.5}
 \begin{itemize}
-	\item Do this using the method in the bib file (\cite{einstein})
-	\item Then do the next thing
+	\item Locate MRS Voxel \hfill 30 seconds
+	\item Shimming \hfill 2 minutes
+	\item MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
-\step{5}{orbi tristique senectus}{30}
+\step{5}{MRS Scan 4: Right Supramarginal Gyrus}{12.5}
 \begin{itemize}
-	\item Then do the next thing
-	\item Then do the next thing
-	\item Then do the next thing
+	\item Locate MRS Voxel \hfill 30 seconds
+	\item Shimming \hfill 2 minutes
+	\item MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
-\step{6}{ipsum dolor sit amet}{15}
+\step{6}{fMRI Scan: Whole Brain}{14}
 \begin{itemize}
-	\item Then do the next thing as done by \cite{einstein}
-	\item Then do the next thing
-	\item Then do the next thing
-	\item Then do the next thing
+    \item Setup Slices \hfill 2 minutes
+	\item Shimming \hfill 2 minutes
+	\item fMRI Scan \hfill 10 minutes
 \end{itemize}
 \divider
-
+\divider
 
 \clearpage
 
-\need[scanner_protocol_info]{Sources}
+%\need[scanner_protocol_info]{Sources}
 
-\nocite{*}
+%\nocite{*}
 
-\printbibliography
+%\printbibliography
 
 
-\divider
+%\divider
 
 
 %% If the NEXT page doesn't start with a \need but you'd
