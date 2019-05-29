@@ -10,6 +10,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
 \usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{amssymb}
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -44,10 +46,8 @@
   \madeby{Andrew Stier}{andrewstier@uchicago.edu}{May 29, 2019}
   %\addedto{John Smith}{abv1@uni.ac.uk}{October 3, 2017}
 }
-
-
 \purpose{
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta dui a fermentum varius. Aliquam cursus urna sit amet urna sollicitudin, vel pellentesque turpis imperdiet. Aenean lectus neque, rhoncus vel.
+    The goal of this pilot is to examine for the first time the ability of MRS to capture functional fluctuations in metabolite levels in response to naturalistic stimuli. This will help to bridge invasive research in non-human species that examines how neurotransmitter levels impact local brain networks with research linking changes in a global network structure to various psychopathologies in humans. We expect this to have broad implications for pharmacological treatment of common psychopathologies and increase the effectiveness of biologically based diagnoses of psychopathology.
 } % add a short description of the purpose for this protocol
 
 
@@ -60,56 +60,60 @@
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \need title in the "main" bar.
-\need[scanner_protocol_info]{Protocol \hfill 85 minutes}
+%\need[scanner_protocol_info]{Protocol \hfill 85 minutes}
+%\marginpar{\input{scanner_protocol_info}}
 
+\marginpar{\input{scanner_protocol_info}}
+\vspace{-125px}
+{\color{heading}\LARGE\bfseries\MakeUppercase{Protocol \hfill 85 minutes}}\\[-1ex]%
+{\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 \step{1}{Initial Setup}{21}
 \begin{itemize}
-	\item Participant Loading \hfill 10 minutes
-	\item Localizer \hfill 1 minute
-	\item Structural Scan \hfill 10 minutes
+	\item[$\Box$] Participant Loading \hfill 10 minutes
+	\item[$\Box$] Localizer \hfill 1 minute
+	\item[$\Box$] Structural Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
 \step{2}{MRS Scan 1: Left Cerebellum}{12.5}
 \begin{itemize}
-	\item Locate MRS Voxel \hfill 30 seconds
-	\item Shimming \hfill 2 minutes
-	\item MRS Scan \hfill 10 minutes
+	\item[$\Box$] Locate MRS Voxel \hfill 30 seconds
+	\item[$\Box$] Shimming \hfill 2 minutes
+	\item[$\Box$] MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
 
 \step{3}{MRS Scan 2: Left Occipital Pole (Visual Cortex)}{12.5}
 \begin{itemize}
-	\item Locate MRS Voxel \hfill 30 seconds
-	\item Shimming \hfill 2 minutes
-	\item MRS Scan \hfill 10 minutes
+	\item[$\Box$] Locate MRS Voxel \hfill 30 seconds
+	\item[$\Box$] Shimming \hfill 2 minutes
+	\item[$\Box$] MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
 \step{4}{MRS Scan 3: Right Paracingulate Gyrus (Right Anterior Cingulate Cortex/ vmPFC/ACC)}{12.5}
 \begin{itemize}
-	\item Locate MRS Voxel \hfill 30 seconds
-	\item Shimming \hfill 2 minutes
-	\item MRS Scan \hfill 10 minutes
+	\item[$\Box$] Locate MRS Voxel \hfill 30 seconds
+	\item[$\Box$] Shimming \hfill 2 minutes
+	\item[$\Box$] MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
 \step{5}{MRS Scan 4: Right Supramarginal Gyrus}{12.5}
 \begin{itemize}
-	\item Locate MRS Voxel \hfill 30 seconds
-	\item Shimming \hfill 2 minutes
-	\item MRS Scan \hfill 10 minutes
+	\item[$\Box$] Locate MRS Voxel \hfill 30 seconds
+	\item[$\Box$] Shimming \hfill 2 minutes
+	\item[$\Box$] MRS Scan \hfill 10 minutes
 \end{itemize}
 \divider
 
 \step{6}{fMRI Scan: Whole Brain}{14}
 \begin{itemize}
-    \item Setup Slices \hfill 2 minutes
-	\item Shimming \hfill 2 minutes
-	\item fMRI Scan \hfill 10 minutes
+    \item[$\Box$] Setup Slices \hfill 2 minutes
+	\item[$\Box$] Shimming \hfill 2 minutes
+	\item[$\Box$] fMRI Scan \hfill 10 minutes
 \end{itemize}
-\divider
 \divider
 
 \clearpage

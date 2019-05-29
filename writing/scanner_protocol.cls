@@ -91,6 +91,7 @@
 \newcommand{\makeheader}{%
   \begingroup
     \ifdef{\@logodiameter}{\begin{minipage}{\dimexpr\linewidth-\@logodiameter}}{}%
+    \vspace{-150px}
     \raggedright\color{emphasis}%
     {\Huge\bfseries\MakeUppercase{\@name}\par}
     \medskip
